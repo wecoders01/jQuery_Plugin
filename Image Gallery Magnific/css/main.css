@@ -1,0 +1,7 @@
+.popup-gallery img {
+    width: 25%;
+    float: left;
+    display: inline-block;
+}
+
+.popup-gallery {margin-top: 100px;}

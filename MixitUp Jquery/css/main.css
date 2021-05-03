@@ -1,0 +1,44 @@
+
+/* Required */
+#mix-active .mix {
+    display: none;
+}
+
+.working-area {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.portfolio-menu button {border: none;background: none;text-transform: uppercase;line-height: 1;font-size: 20px;font-weight: bold;padding: 0 10px;outline: none;}
+
+.portfolio-menu button.active {
+    color: red;
+}
+.portfolio-img img {
+    width: 100%;
+}
+
+.portfolio-text {
+    border: 1px solid #ddd;
+    border-bottom: 2px solid #ddd;
+    padding: 20px 0;
+}
+
+.portfolio-text h6 {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 0;
+    line-height: 1;
+}
+
+.portfolio-text p {
+    margin: 0;
+}
+.portfolio-menu {
+    padding: 30px 0;
+}
+
+.portfolio-wrapper {
+    margin-bottom: 40px;
+}

@@ -1,0 +1,102 @@
+.gallery-area {
+    overflow: hidden;
+}
+.portfolio-menu button {
+	background: rgba(2, 2, 2, 0) none repeat scroll 0 0;
+	border: medium none;
+	color: #797979;
+	font-size: 18px;
+	line-height: 1;
+	transition: all 0.3s ease 0s;
+	cursor: pointer;
+	text-transform: capitalize;
+	padding: 8px 16px;
+	font-weight: 600;
+	position: relative;
+	font-family: 'Poppins', sans-serif;
+}
+.portfolio-menu {
+    padding: 40px 0;
+    margin-top: 100px;
+}
+.portfolio-menu button:focus {
+    outline: 0 none;
+}
+.portfolio-menu button:hover {
+    color: #111111;
+    background: #32ea91;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+.portfolio-menu button.active {
+    color: #111111;
+    background: #32ea91;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.portfolio-img {
+    position: relative;
+}
+.portfolio-img > a{
+    position: relative;
+    display: inline-block;
+}
+.portfolio-img > a::before {
+	position: absolute;
+	content: "";
+	height: 100%;
+	width: 100%;
+	background: #32ea91;
+	opacity:0;
+	left: 0;
+	top: 0;
+	transition: .3s;
+}
+.portfolio-wrapper:hover .portfolio-img > a::before{
+    opacity: .9;
+}
+.portfolio-img > a img{
+    width:100%;
+}
+.portfolio-text {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	transform: translateY(-50%);
+	transition: .3s;
+	opacity: 0;
+}
+.portfolio-wrapper:hover .portfolio-text{opacity: 1;}
+.portfolio-text p {
+	line-height: 1;
+	color: #111111;
+	font-size: 14px;
+	font-weight: 500;
+	margin-bottom: 9px;
+}
+.portfolio-text h2 {
+	font-size: 30px;
+	margin-bottom: 9px;
+}
+.portfolio-text h2 > a{color:#111111;transition: .3s;}
+.portfolio-text h2 > a:hover{color:#202aae;}
+.portfolio-text span {
+	height: 3px;
+	width: 60px;
+	background: #fff;
+	display: inline-block;
+	width:0;
+	transition: .3s;
+}
+.portfolio-wrapper:hover .portfolio-text span{width:60px;}
+.grid-item .portfolio-wrapper {
+    padding-bottom: 30px !important;
+}

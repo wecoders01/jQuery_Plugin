@@ -1,0 +1,29 @@
+.zoom-img img {
+    width: 500px;
+}
+.zoom-image {
+    margin-top: 100px;
+}
+
+
+
+/*set a border on the images to prevent shifting*/
+#gallery_04 img{border:2px solid white;}
+ 
+/*Change the colour*/
+.active img{border:2px solid #333 !important;}
+
+#gallery_04 a img {
+    width: 200px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.zoomWrapper img {
+    width: 500px !important;
+    height: 500px !important;
+}
+.zoomWrapper {
+    width: 100%;
+    height: 100%;
+}
