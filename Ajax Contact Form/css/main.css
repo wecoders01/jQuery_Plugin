@@ -1,0 +1,14 @@
+.contact-form {
+    margin-top: 120px;
+}
+.form-element input, .form-element textarea {
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 15px 10px;
+    margin-bottom: 30px;
+}
+
+.form-element textarea {
+    height: 150px;
+    resize: none;
+}

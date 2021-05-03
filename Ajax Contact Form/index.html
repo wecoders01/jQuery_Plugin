@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>This is Title</title>
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+
+    <!-- CSS Here -->
+    <link rel="stylesheet" href="css/bootstrap-4.3.1.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Jquery -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+    <section class="contact-form">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 text-center">
+                    <form id="contact-form" action="mail.php" method="POST">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-element">
+                                    <input type="text" name="name" placeholder="First Name">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-element">
+                                    <input type="text" name="lname" placeholder="Last Name">
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-element">
+                                    <input type="email" name="email" placeholder="email">
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-element">
+                                    <input type="text" name="subject" placeholder="Subject">
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-element">
+                                    <textarea name="message" id="" cols="30" rows="10" placeholder="message"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-element">
+                                   <input type="submit" value="Send Message">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="ajax-response"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+
+    <!-- JS Here -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.3.1.min.js"></script>
+    <script src="js/ajax.js"></script>
+
+    <!-- main.js -->
+    <script src="js/main.js"></script>
+</body>
+</html>
