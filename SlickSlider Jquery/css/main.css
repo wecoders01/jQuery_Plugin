@@ -1,0 +1,139 @@
+.btn {
+    color: rgb(17, 17, 17);
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 0px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+    letter-spacing: 2px;
+    position: relative;
+    background: rgb(50, 234, 145);
+    border-width: medium;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    padding: 28px 56px;
+    transition: all 0.3s ease 0s;
+    border-radius: 0px;
+}
+.btn::before {
+    content: "";
+    width: 0px;
+    height: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 100%;
+    background: rgb(32, 42, 174);
+    transition: all 0.4s ease 0s;
+}
+.btn-text {
+    color: rgb(17, 17, 17);
+    position: relative;
+    z-index: 9999;
+    transition: all 0.3s ease 0s;
+}
+.btn-border {
+    height: 2px;
+    width: 40px;
+    display: inline-block;
+    position: relative;
+    top: -3px;
+    left: 7px;
+    background: rgb(17, 17, 17);
+    transition: all 0.3s ease 0s;
+}
+.btn:hover::before {
+    width: 100%;
+    left: 0;
+    -webkit-transition: width 0.3s ease;
+    transition: width 0.3s ease;
+}
+.btn:hover .btn-text {
+    color: #fff;
+}
+.btn:hover .btn-border {
+    background: #fff;
+}
+
+/* Slider Area */
+.slider-area {
+    position: relative;
+    margin-bottom: 300px;
+  }
+  .slider-height {
+      min-height: 960px;
+  }
+
+  .single-slider {
+      background-size: cover;
+      background-position: center center;
+  }
+  .slider-content > span {
+      color: #32ea91;
+      font-size: 30px;
+      letter-spacing: 2px;
+      font-weight: 400;
+      margin-bottom: 38px;
+      display: inline-block;
+  }
+  .slider-content h1 {
+      font-family: 'Kaushan Script', cursive;
+      font-size: 220px;
+      color: #fff;
+      letter-spacing: -.6px;
+      font-weight: 400;
+      margin-bottom:0;
+  }
+  .slider-button {
+      margin-top: 88px;
+  }
+.slider-active button.slick-arrow {
+	position: absolute;
+	top: 50%;
+	left: 70px;
+	transform: translateY(-50%);
+	border: 0;
+	font-size: 15px;
+	padding: 0;
+	color: #222;
+	z-index: 2;
+	opacity: 0;
+	visibility: hidden;
+	height: 70px;
+	width: 70px;
+	border-radius: 50%;
+	cursor: pointer;
+	background: #32ea91;
+}
+.slider-active button.slick-next{left: auto;right:70px;}
+.slider-active:hover button{
+    opacity: 1;
+    visibility: visible;
+}
+.slider-active button:hover{
+    background: #202AAE;
+    color: #fff;
+}
+.slider-2 .slider-active button.slick-arrow {
+	background: #d10459;
+	color:#fff;
+}
+.slider-2  .slider-active button:hover{
+    background: #202AAE;
+    color: #fff;
+}.slider-active button:hover{
+    background: #202AAE;
+    color: #fff;
+}
+.slick-initialized .slick-slide {
+    outline: none;
+}
+
+button:focus, btn:focus {
+    outline: none;
+    box-shadow: 0 0 0;
+}

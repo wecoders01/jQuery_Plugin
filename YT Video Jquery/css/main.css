@@ -1,0 +1,17 @@
+.video-wrapper {
+    text-align: center;
+    height: 500px;
+    background: #fbfbfb;
+    position: relative;
+}
+
+.video-wrapper h1 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+    font-size: 52px;
+    z-index: 9;
+}
